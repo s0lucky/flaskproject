@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Souls III</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+<h1 align="center"> <a href="/"> <img  src="{{ url_for('static', filename='ds3_main.jpg') }}" alt="DarkSouls" width="500px"></a></h1>
+<header align="center"> <a href= "/classes/"> Классы </a><a href= "#"> Оружие </a> <a href= "#"> Магия </a> </header>
+<h1>Классы в Dark Souls III</h1>
+    <p>У каждого класса различные начальные характеристики и экипировка. Но от начального класса совершенно не зависит то,
+        кем в итоге будет персонаж на поздних стадиях игры.<img align="right" src="{{ url_for('static', filename='ds3_classes.jpg') }}" alt="DarkSoulsClasses" width="500px"></p>
+    <p>Любой выбранный класс позволяет прокачивать любые характеристики и использовать совершенно любую экипировку,
+        если вы отвечаете её требованиям. То есть, от класса зависит только снаряжение, характеристики и наличие заклинаний,
+        которые вы получите в самом начале игры.</p>
+    <ul style="margin-left: 60px">
+        <li>1.Рыцарь
+        <li>2.Наёмник
+        <li>3.Воин
+        <li>4.Глашатай
+        <li>5.Вор
+        <li>6.Убийца
+        <li>7.Чародей
+        <li>8.Пиромант
+        <li>9.Клирик
+        <li>10.Нищий</li>
+    </ul>
+</div>
+</body>
+</html>
