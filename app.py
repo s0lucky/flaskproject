@@ -14,5 +14,15 @@ def about():
     return render_template('classes.html')
 
 
+@app.route('/weapons/')
+def about():
+    return render_template('weapons.html')
+
+
+@app.route('/locations/')
+def about():
+    return render_template('locations.html')
+
+
 if __name__ == '__main__':
     app.run()

@@ -7,29 +7,178 @@
           rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
           crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        h1 {
+            margin-left: 60px
+        }
+    </style>
 </head>
 <body>
 <div class="container">
 <h1 align="center"> <a href="/"> <img  src="{{ url_for('static', filename='ds3_main.jpg') }}" alt="DarkSouls" width="500px"></a></h1>
-<header align="center"> <a href= "/classes/"> Классы </a><a href= "#"> Оружие </a> <a href= "#"> Магия </a> </header>
-<h1>Классы в Dark Souls III</h1>
+<header align="center"> <a style = "text-decoration: none; color: white;" href= "/classes/"> Классы </a>
+    <a style = "text-decoration: none; color: white;" href= "/classes/"> Оружие </a>
+    <a style = "text-decoration: none; color: white;" href= "/classes/"> Локации </a>
+</header>
+    <h1>Классы в Dark Souls III</h1>
     <p>У каждого класса различные начальные характеристики и экипировка. Но от начального класса совершенно не зависит то,
         кем в итоге будет персонаж на поздних стадиях игры.<img align="right" src="{{ url_for('static', filename='ds3_classes.jpg') }}" alt="DarkSoulsClasses" width="500px"></p>
     <p>Любой выбранный класс позволяет прокачивать любые характеристики и использовать совершенно любую экипировку,
         если вы отвечаете её требованиям. То есть, от класса зависит только снаряжение, характеристики и наличие заклинаний,
         которые вы получите в самом начале игры.</p>
-    <ul style="margin-left: 60px">
-        <li>1.Рыцарь
-        <li>2.Наёмник
-        <li>3.Воин
-        <li>4.Глашатай
-        <li>5.Вор
-        <li>6.Убийца
-        <li>7.Чародей
-        <li>8.Пиромант
-        <li>9.Клирик
-        <li>10.Нищий</li>
-    </ul>
+    <table class="table" style="color: white;">
+  <thead>
+    <tr>
+      <th scope="col">Уровень</th>
+      <th scope="col">Класс</th>
+      <th scope="col">Жизненная сила</th>
+      <th scope="col">Стойкость</th>
+      <th scope="col">Физическая мощь</th>
+      <th scope="col">Ученость</th>
+      <th scope="col">Сила</th>
+      <th scope="col">Ловкость</th>
+      <th scope="col">Интеллект</th>
+      <th scope="col">Вера</th>
+      <th scope="col">Удача</th>
+    </tr>
+   <tbody>
+    <tr>
+      <th scope="row">Рыцарь</th>
+      <td>9</td>
+      <td>12</td>
+      <td>10</td>
+      <td>11</td>
+      <td>15</td>
+      <td>13</td>
+      <td>12</td>
+      <td>9</td>
+      <td>9</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th scope="row">Наёмник</th>
+      <td>8</td>
+      <td>11</td>
+      <td>12</td>
+      <td>11</td>
+      <td>10</td>
+      <td>10</td>
+      <td>16</td>
+      <td>10</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th scope="row">Воин</th>
+      <td>7</td>
+      <td>14</td>
+      <td>6</td>
+      <td>12</td>
+      <td>11</td>
+      <td>16</td>
+      <td>9</td>
+      <td>8</td>
+      <td>9</td>
+      <td>11</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Глашатай</th>
+      <td>9</td>
+      <td>12</td>
+      <td>10</td>
+      <td>9</td>
+      <td>12</td>
+      <td>12</td>
+      <td>11</td>
+      <td>8</td>
+      <td>13</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th scope="row">Вор</th>
+      <td>5</td>
+      <td>10</td>
+      <td>11</td>
+      <td>10</td>
+      <td>9</td>
+      <td>9</td>
+      <td>13</td>
+      <td>10</td>
+      <td>8</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th scope="row">Убийца</th>
+      <td>10</td>
+      <td>10</td>
+      <td>14</td>
+      <td>11</td>
+      <td>10</td>
+      <td>10</td>
+      <td>14</td>
+      <td>11</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th scope="row">Чародей</th>
+      <td>6</td>
+      <td>9</td>
+      <td>16</td>
+      <td>9</td>
+      <td>7</td>
+      <td>7</td>
+      <td>12</td>
+      <td>16</td>
+      <td>7</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th scope="row">Пиромант</th>
+      <td>8</td>
+      <td>11</td>
+      <td>12</td>
+      <td>10</td>
+      <td>8</td>
+      <td>12</td>
+      <td>9</td>
+      <td>14</td>
+      <td>14</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th scope="row">Клирик</th>
+      <td>7</td>
+      <td>10</td>
+      <td>14</td>
+      <td>9</td>
+      <td>7</td>
+      <td>12</td>
+      <td>8</td>
+      <td>7</td>
+      <td>16</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th scope="row">Нищий</th>
+      <td>1</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+  </thead>
+    </table>
+
+
+
 </div>
 </body>
 </html>

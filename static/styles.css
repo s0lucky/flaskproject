@@ -14,5 +14,10 @@
     font-size: 40px;
     word-spacing: 50px;
 }
-
+ td {
+    text-align: center;
+ }
+ th {
+    text-align: center;
+ }
 
